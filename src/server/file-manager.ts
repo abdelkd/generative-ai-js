@@ -55,7 +55,7 @@ export class GoogleAIFileManager {
     fileMetadata: FileMetadata,
   ): Promise<UploadFileResponse> {
     let file: Uint8Array;
-    
+
     if (typeof filePath === "string") {
       file = readFileSync(filePath);
     } else {
